@@ -23,15 +23,11 @@ a{
   border-radius: 5px;
   text-decoration: none;
 }
-a:hover{
-  opacity: 1;
-  color:  black;
-  background-color: white;
+.container{
+  margin: 0 auto;
 }
 
-
 html{
-
   height: 100%;
   background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -40,10 +36,10 @@ html{
   background-size: cover;
 }
 body {
+  margin: 0;
   color: #fff;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.75);
-
+  background-color: inherit;
 }
 .header{
 }
@@ -63,8 +59,17 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-.nav li a{
+.nav li a, .footer_nav li a{
     color:  #f0feed;
+}
+.footer_nav li a{
+  color:  black;
+}
+.nav li a:hover, .footer_nav li a:hover{
+  color: #085c07;
+  text-shadow: 0 1px 0 rgba(0, 255, 230, 0.4);
+  background-color: inherit;
+  text-decoration: none;
 }
 #logo{
   text-align: center;
@@ -119,6 +124,91 @@ body {
   background-color:  #84ae83;
   color: snow;
 }
-#services{
-  margin-top: 550px;
+.contacts{
+  margin-top: 100px;
+}
+#contact{
+  padding: 87px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#contact h1, #contact h2,#contact h3,#contact p{
+  color: inherit;
+}
+.well{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  border: none;
+}
+.well legend {
+  color: snow;
+}
+.form-control{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px;
+}
+.controls li{
+  color: snow;
+  list-style: none;
+  text-align: left;
+}
+.btn-contact{
+  margin: 3px;
+  background-color: rgba(132, 174, 131, 0.75);;
+  border: none;
+}
+.btn-contact:hover{
+  background-color: #083c07;
+  color: snow;
+}
+.btn-contact:active{
+  background-color: #083c07;
+}
+#services-header{
+  max-width: 600px;
+  margin: 0 auto;
+}
+#services-left{
+  margin: 50px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: right;
+  color: snow;
+}
+#services-left h2, #services-left p{
+  color: snow;
+}
+#services-left img{
+  border: 4px solid #84ae83;
+  height: 215px;
+  float: left;
+}
+#services-right{
+  margin: 50px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: left;
+  color: snow;
+}
+#services-right h2, #services-right p{
+  color: snow;
+}
+#services-right img{
+  border: 4px solid #84ae83;
+  height: 215px;
+  float: right;
+}
+#products{
+  margin: 75px 25px 0;
+  background-color:
+  padding: 25px;
+}
+#products h1, #products p{
+  margin: 30px;
+  color: black;
+}
+#products img{
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  max-width: 33.33%;
 }
