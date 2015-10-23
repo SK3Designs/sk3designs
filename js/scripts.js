@@ -3,7 +3,6 @@ $(function(){
     event.stopPropagation();
     $("#projects").get(0).scrollIntoView();
   });
-
 });
 
 /*
