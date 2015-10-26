@@ -90,12 +90,11 @@ body {
   margin-top: 175px;
 }
 #about img{
-  float: left;
-  max-width: 250px;
-  border-radius: 100%;
-  border: 4px solid #84ae83;
+  display: none;
 }
-
+#about h1{
+  display: none;
+}
 #projects{
   margin-top: 200px;
 }
@@ -225,6 +224,12 @@ body {
 }
 .btn-contact:active{
   background-color: #083c07;
+}
+#contact_us{
+  display: none;
+}
+#services{
+  display: none;
 }
 #services-header{
   max-width: 600px;
