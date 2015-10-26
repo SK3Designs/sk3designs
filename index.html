@@ -2,37 +2,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../favicon.ico">
     <title>Tembell Solutions INC.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=600, initial-scale=1, maximum-scale=1">
     <style>
-
-      @media screen and (max-device-width: 1064px) {
+      @media screen and (max-width: 1064px) {
         .btn-xlarge-bold {
           font-size: 22px;
         }
       }
-      @media screen and (max-device-width: 960px) {
+      @media screen and (max-width: 960px) {
         .btn-xlarge-bold {
-          font-size: 26px;
+          font-size: 16px;
           font-weight: bold;
         }
-        .btn-default-green{
+      }
+      @media screen and (max-width: 768px) {
+        .nav {
           display: none;
+        }
+        .info{
+          display: none;
+        }
+        #contact_us{
+          display: block;
+          margin: 0px auto;
+          width: 90%;
+          padding-top: 70%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        #contact_us h1{
+          color: snow;
+          margin-top: -53%;
+        }
+        #contact_us h3, #contact_us p {
+        color: snow;
+        }
+        #contact_us a {
+          color: snow;
+          text-decoration: none;
+          font-size: 18px;
+        }
+        #services{
+          display: block;
+          margin: 0px auto;
+          width: 90%;
+          padding-top: 70%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        #services h1{
+          color: snow;
+          margin-top: -60%;
+        }
+        #services img{
+          margin-top: 40px;
+          max-width: 25%;
+        }
+        #about{
+          margin: 10px auto;
+          width: 90%;
+          padding-top: 70%;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        #about h1{
+          color: snow;
+          display: block;
+          margin-top: -60%;
+        }
+        #about h2{
+          display: none;
+        }
+        #about p{
+          display: none;
+        }
+        #about img{
+          display: block;
+          margin: 0 auto;
+          max-width: 30%;
         }
         #projects{
           display: none;
         }
-        #projects h2{
+        #footer{
           display: none;
         }
-        #footer p, #footer li{
-          display: none;
-        }
-        #footer a{
-          margin-bottom: 30px;
+      }
+      @media screen and (max-width: 480px) {
+        #contact_us h1{
+          margin-top: -63%;
         }
       }
     </style>
@@ -57,8 +116,8 @@
             <img src="img/house1.jpg">
             <img src="img/house2.jpg">
             <img src="img/house1.jpg">
-            <a  href="contact.html"><button type="button" class="btn btn-default-green btn-xlarge-bold">FREE ESTIMATES</button></a>
-            <a  href="contact.html"><button type="button" class="btn btn-default btn-xlarge-bold">WE CAN BEAT ANY PRICE!</button></a>
+  </a>          <a  href="contact.html"><button type="button" class="btn btn-default-green btn-xlarge-bold">FREE ESTIMATES</button></a>
+</a>      <a  href="contact.html"><button type="button" class="btn btn-default btn-xlarge-bold">WE CAN BEAT ANY PRICE!</button></a>
             <button type="button" class="btn projects btn-default-green btn-xlarge-bold">OUR PROJECTS</button>
         </div>
       </div>
@@ -111,8 +170,7 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-              <p>&#169;SK3 DESIGNS 2015, Bothell, WA</p>
-              <a href="tel://+14258305981">(425)830-5981</a>
+              <a href="#"><p>&#169;SK3 DESIGNS 2015, Bothell, WA</p></a>
             </div>
           </div>
           <script src="js/jquery-1.11.3.js"></script>
