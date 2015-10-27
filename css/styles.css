@@ -141,6 +141,9 @@ body {
   padding: 0px;
   text-decoration: none;
 }
+#contact_phone{
+  display: none;
+}
 .info{
   display: inline;
 }
@@ -150,7 +153,7 @@ body {
   max-width: 50%;
 }
 .btn-xlarge-bold{
-  margin-top: 50px;
+  margin: 50px 0px 0;
   padding: 10px 40px;
   font-size: 26px; //change this to your desired size
   line-height: normal;
@@ -178,7 +181,7 @@ body {
     border: 1px solid #085c07;
 }
 .btn-default-green{
-  margin-top: 50px;
+  margin: 50px 0px 0;
   background-color:  #84ae83;
   color: snow;
 }
@@ -283,4 +286,57 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 20px;
   max-width: 33.33%;
+}
+@media screen and (max-device-width: 1064px) {
+  .btn-xlarge-bold {
+    font-size: 22px;
+  }
+  .nav li{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -20px;
+  }
+  #footer{
+    min-height: 90px;
+  }
+  #footer a{
+    vertical-align: middle;
+    padding: 0px;
+    font-size: 26px;
+    color: snow;
+  }
+  .well{
+    display: none;
+  }
+  .footer_nav{
+    display: none;
+  }
+  #contact_phone{
+    display: block;
+  }
+  #services-right img, #services-left img{
+    display: none;
+  }
+  #services-left p, #services-left h2{
+    margin-left:0px;
+    text-align: left;
+  }
+  #products{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-device-width: 960px) {
+  .btn-xlarge-bold {
+    margin: 50px -10px 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .info img{
+    height: 250px;
+  }
+  .project{
+    height: 150px;
+    padding: 1px;
+    border: 1px solid #84ae83;
+  }
 }
