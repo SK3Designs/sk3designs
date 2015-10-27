@@ -1,4 +1,6 @@
-
+* {
+margin: 0;
+}
 
 h1,h2,h3,h4,h5{
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
@@ -36,10 +38,21 @@ html{
   background-size: cover;
 }
 body {
+  height: 100%;
   margin: 0;
   color: #fff;
   text-align: center;
   background-color: inherit;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+  clear:both;
+  height: 4em;
 }
 .header{
 }
@@ -317,7 +330,10 @@ body {
   #services-right img, #services-left img{
     display: none;
   }
-  #services-left p, #services-left h2{
+  #services-left h2, #services-right h2{
+    text-align: center;
+  }
+  #services-left p, {
     margin-left:0px;
     text-align: left;
   }
