@@ -102,13 +102,6 @@ margin: 0 auto -4em;
 #about{
   margin-top: 175px;
 }
-#about img{
-  float: left;
-  max-width: 250px;
-  border-radius: 100%;
-  border: 4px solid #84ae83;
-}
-
 #projects{
   margin-top: 200px;
 }
@@ -317,6 +310,10 @@ margin: 0 auto -4em;
     padding: 0px;
     font-size: 26px;
     color: snow;
+  }
+  #about{
+    margin: 175px auto 10px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .well{
     display: none;
