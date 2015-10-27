@@ -313,6 +313,7 @@ margin: 0 auto -4em;
   }
   #about{
     margin: 175px auto 10px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .well{
