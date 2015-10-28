@@ -332,9 +332,6 @@ body {
     margin-left:0px;
     text-align: left;
   }
-  #products{
-    margin: 0 auto;
-  }
 }
 @media screen and (max-device-width: 960px) {
   .btn-xlarge-bold {
