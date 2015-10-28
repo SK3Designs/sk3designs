@@ -294,7 +294,7 @@ body {
     min-height: 90px;
   }
   #footer a{
-    vertical-align: middle;
+    margin: 0px;
     padding: 0px;
     font-size: 26px;
     color: snow;
@@ -314,7 +314,7 @@ body {
     display: none;
   }
   .well{
-    display: none;
+    margin-top: 50px;
   }
   .footer_nav{
     display: none;
