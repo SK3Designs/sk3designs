@@ -282,6 +282,9 @@ body {
   visibility: collapse;
 }
 @media screen and (max-device-width: 1064px) {
+  body{
+    -webkit-text-size-adjust: none;
+  }
   .btn-xlarge-bold {
     font-size: 22px;
   }
