@@ -293,6 +293,9 @@ margin: 0 auto -4em;
   padding: 20px;
   max-width: 33.33%;
 }
+#products h3{
+  visibility: collapse;
+}
 @media screen and (max-device-width: 1064px) {
   .btn-xlarge-bold {
     font-size: 22px;
@@ -318,6 +321,9 @@ margin: 0 auto -4em;
   }
   #about h2, #about p{
     color: snow;
+  }
+  #products h3{
+    visibility: collapse;
   }
   #services-header p{
     display: none;
