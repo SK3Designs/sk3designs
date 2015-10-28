@@ -1,7 +1,3 @@
-* {
-margin: 0;
-}
-
 h1,h2,h3,h4,h5{
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
   color: black;
@@ -38,21 +34,10 @@ html{
   background-size: cover;
 }
 body {
-  height: 100%;
   margin: 0;
   color: #fff;
   text-align: center;
   background-color: inherit;
-}
-.wrapper {
-min-height: 100%;
-height: auto !important;
-height: 100%;
-margin: 0 auto -4em;
-}
-.footer, .push {
-  clear:both;
-  height: 4em;
 }
 .header{
 }
