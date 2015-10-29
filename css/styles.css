@@ -178,7 +178,7 @@ body {
 }
 .btn-default-green:hover{
   opacity: 0.85;
-  background-color:  #84ae83;
+  background-color: #84ae83;
   color: snow;
 }
 .contacts{
@@ -278,20 +278,36 @@ body {
   padding: 20px;
   max-width: 33.33%;
 }
-#products h3{
-  visibility: collapse;
-}
-@media screen and (max-device-width: 1064px) {
+@media screen and (max-width: 1064px) {
   body{
     -webkit-text-size-adjust: none;
   }
   .btn-xlarge-bold {
     font-size: 22px;
+    background-color: #84ae83;
+  }
+  .info_mobile{
+    display: none;
+  }
+  .info_mobile_display{
+    width: 95%;
+    margin: 0 auto;
   }
   .nav li{
     font-size: 20px;
     font-weight: bolder;
     margin-top: -20px;
+  }
+  .info img{
+    float: none;
+    margin: 15px auto;
+    padding: 5px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  #projects{
+    display: none;
   }
   #footer{
     min-height: 90px;
@@ -310,20 +326,8 @@ body {
   #about h2, #about p{
     color: snow;
   }
-  #products h3{
-    visibility: collapse;
-  }
   #services-header p{
     display: none;
-  }
-  .well{
-    margin-top: 50px;
-  }
-  .footer_nav{
-    display: none;
-  }
-  #contact_phone{
-    display: block;
   }
   #services-right img, #services-left img{
     display: none;
@@ -335,16 +339,25 @@ body {
     margin-left:0px;
     text-align: left;
   }
+  #products img{
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  .well{
+    margin: 50px auto auto;
+    max-width: 120%;
+  }
+  .footer_nav{
+    display: none;
+  }
+  #contact_phone{
+    display: block;
+  }
+  #footer a{
+    margin-top: 30px;
+  }
 }
-@media screen and (max-device-width: 960px) {
-  .btn-xlarge-bold {
-    margin: 50px -10px 0px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .info img{
-    height: 250px;
-  }
+@media screen and (max-width: 960px) {
   .project{
     height: 150px;
     padding: 1px;

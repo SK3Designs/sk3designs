@@ -5,6 +5,7 @@
     <link rel="icon" href="../../favicon.ico">
     <title>Tembell Solutions INC.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dropmenu.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <meta name="viewport" content="initial-scale=0.5">
   </head>
@@ -15,13 +16,19 @@
         <div id="logo">
           <a href="index.html"><img src="img/logo.gif" id="logo"></a>
         </div>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div id="drop_menu">
+          <nav>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        </div>
       </div>
       <div class="container">
         <div class="row contacts">
