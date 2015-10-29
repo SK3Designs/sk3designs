@@ -302,16 +302,17 @@ body {
   #logo img{
     max-width: 300px;
   }
-  .btn-xlarge-bold {
-    font-size: 22px;
-    background-color: #84ae83;
-  }
   .info_mobile{
     display: none;
   }
   .info_mobile_display{
     width: 95%;
     margin: 0 auto;
+  }
+  .btn-xlarge-bold {
+    font-size: 22px;
+    background-color: #84ae83;
+    margin-left: -2px;
   }
   .nav li{
     font-size: 20px;
