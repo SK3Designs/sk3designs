@@ -340,6 +340,9 @@ body {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.5);
   }
+  #about h2{
+    margin-bottom: 15px;
+  }
   #about h2, #about p{
     color: snow;
   }
