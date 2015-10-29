@@ -299,6 +299,9 @@ body {
   body{
     -webkit-text-size-adjust: none;
   }
+  #logo img{
+    max-width: 300px;
+  }
   .btn-xlarge-bold {
     font-size: 22px;
     background-color: #84ae83;
