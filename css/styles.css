@@ -87,6 +87,13 @@ body {
 #about{
   margin-top: 175px;
 }
+#intro{
+  max-width: 800px;
+  margin: 175px auto 0;
+}
+#intro p{
+  font-size: 1.5em;
+}
 #projects{
   margin-top: 200px;
 }
@@ -96,7 +103,7 @@ body {
   margin-top: 25px;
   max-width: 24%;
   padding: 5px;
-  height: 250px;
+  height: auto;
 }
 #footer{
   width: 100%;
@@ -334,6 +341,14 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
   }
   #about h2, #about p{
+    color: snow;
+  }
+  #intro{
+    margin: 175px auto 10px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #intro h2, #intro p{
     color: snow;
   }
   #services-header p{
