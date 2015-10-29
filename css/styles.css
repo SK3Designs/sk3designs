@@ -285,6 +285,9 @@ body {
   padding: 20px;
   max-width: 33.33%;
 }
+#project{
+  margin-top: 50px;
+}
 @media screen and (max-device-width: 1096px) {
   .btn-xlarge-bold{
     font-size: 24px;
@@ -373,6 +376,10 @@ body {
     text-align: left;
   }
   #products img{
+    max-width: 100%;
+    margin: 10px auto;
+  }
+  #project img{
     max-width: 100%;
     margin: 10px auto;
   }
