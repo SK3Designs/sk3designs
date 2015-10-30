@@ -76,6 +76,9 @@ body {
 #logo img{
   max-width: 350px;
 }
+.mobile_only{
+  display: none;
+}
 .info img{
   margin-top: 15px;
   margin-bottom: -25px;
@@ -311,6 +314,9 @@ body {
   .info_mobile_display{
     width: 95%;
     margin: 0 auto;
+  }
+  .mobile_only{
+    display: inline-block;
   }
   .btn-xlarge-bold {
     font-size: 22px;
