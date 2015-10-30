@@ -21,6 +21,44 @@ a{
   border-radius: 5px;
   text-decoration: none;
 }
+.btn-xlarge-bold{
+  margin: 50px 0px 0;
+  padding: 10px 40px;
+  font-size: 26px; //change this to your desired size
+  line-height: normal;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  border-radius: 0px;
+  border: 1px solid #5d747a;
+  background-color: #b1ddf6;
+  color: snow;
+}
+.btn-xlarge-bold:hover{
+  opacity: 0.85;
+  color: snow;
+  background-color: #b1ddf6;
+}
+.btn-xlarge {
+    padding: 10px 32px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    border-radius: 0px;
+    border: 1px solid #085c07;
+}
+.btn-default-green{
+  margin: 50px 0px 0;
+  background-color:  #84ae83;
+  color: snow;
+}
+.btn-default-green:hover{
+  opacity: 0.85;
+  background-color: #84ae83;
+  color: snow;
+}
 .container{
   margin: 0 auto;
 }
@@ -38,8 +76,6 @@ body {
   color: #fff;
   text-align: center;
   background-color: inherit;
-}
-.header{
 }
 .nav{
   text-align: center;
@@ -79,13 +115,17 @@ body {
 .mobile_only{
   display: none;
 }
+.info{
+  display: inline;
+}
 .info img{
   margin-top: 15px;
   margin-bottom: -25px;
   padding: 5px;
+  float: left;
   height: 300px;
   width: 33.33%;
-  max-width: 750px;
+  max-width: 50%;
 }
 #about{
   margin-top: 175px;
@@ -107,89 +147,6 @@ body {
   max-width: 24%;
   padding: 5px;
   height: auto;
-}
-#footer{
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 150px;
-  border-top: 2px solid #085c07;
-}
-.footer_nav{
-  margin-top: 20px;
-}
-.footer_nav li{
-  display: inline;
-  color: snow;
-  padding: 15px;
-}
-.footer_nav li a{
-  color: snow;
-
-}
-#footer img{
-  padding: 10px;
-  max-width: 150px;
-}
-#footer p{
-  color: snow;
-  margin-top: -15px;
-  text-align: right;
-  font-size: 14px;
-  font: cursive;
-}
-#footer a{
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
-#contact_phone{
-  display: none;
-}
-.info{
-  display: inline;
-}
-.info img{
-  float: left;
-  padding: 5px;
-  max-width: 50%;
-}
-.btn-xlarge-bold{
-  margin: 50px 0px 0;
-  padding: 10px 40px;
-  font-size: 26px; //change this to your desired size
-  line-height: normal;
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  border-radius: 0px;
-  border: 1px solid #5d747a;
-  background-color: #b1ddf6;
-  color: snow;
-}
-.btn-xlarge-bold:hover{
-  opacity: 0.85;
-  color: snow;
-  background-color: #b1ddf6;
-}
-.btn-xlarge {
-    padding: 10px 32px;
-    font-size: 22px; //change this to your desired size
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-    border-radius: 0px;
-    border: 1px solid #085c07;
-}
-.btn-default-green{
-  margin: 50px 0px 0;
-  background-color:  #84ae83;
-  color: snow;
-}
-.btn-default-green:hover{
-  opacity: 0.85;
-  background-color: #84ae83;
-  color: snow;
 }
 .contacts{
   margin-top: 100px;
@@ -291,6 +248,43 @@ body {
 #project{
   margin-top: 50px;
 }
+#footer{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 150px;
+  border-top: 2px solid #085c07;
+}
+.footer_nav{
+  margin-top: 20px;
+}
+.footer_nav li{
+  display: inline;
+  color: snow;
+  padding: 15px;
+}
+.footer_nav li a{
+  color: snow;
+
+}
+#footer img{
+  padding: 10px;
+  max-width: 150px;
+}
+#footer p{
+  color: snow;
+  margin-top: -15px;
+  text-align: right;
+  font-size: 14px;
+  font: cursive;
+}
+#footer a{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+#contact_phone{
+  display: none;
+}
 @media screen and (max-device-width: 1096px) {
   .btn-xlarge-bold{
     font-size: 24px;
@@ -338,15 +332,6 @@ body {
   }
   #projects{
     display: none;
-  }
-  #footer{
-    min-height: 90px;
-  }
-  #footer a{
-    margin: 0px;
-    padding: 0px;
-    font-size: 26px;
-    color: snow;
   }
   #about{
     margin: 100px auto 10px;
@@ -400,6 +385,15 @@ body {
     display: block;
   }
   #footer a{
+
+  }
+  #footer{
+    min-height: 90px;
+  }
+  #footer a{
     margin-top: 30px;
+    padding: 0px;
+    font-size: 26px;
+    color: snow;
   }
 }
