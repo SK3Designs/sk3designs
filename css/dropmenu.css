@@ -174,7 +174,7 @@ nav ul ul li {
   }
 }
 
-@media all and (max-width: 1064px) {
+@media all and (max-device-width: 1064px) {
   nav ul li {
     display: block;
     width: 100%;
