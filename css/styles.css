@@ -94,7 +94,7 @@ body {
   padding: 20px;
 }
 .project{
-  margin-top: 20px;
+  margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.65);
   border-radius: 10px;
   font-size: 1.5em;
@@ -135,13 +135,14 @@ body {
   max-width: 150px;
 }
 #footer p{
-  color: snow;
+  color:  #6BA0FA;
   margin-top: -15px;
   text-align: right;
   font-size: 14px;
   font: cursive;
 }
 #footer a{
+  color:  #6BA0FA;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -170,14 +171,6 @@ body {
     font-size: 20px;
     font-weight: bolder;
     margin-top: -20px;
-  }
-  .info img{
-    float: none;
-    margin: 15px auto;
-    padding: 5px;
-    width: auto;
-    max-width: 100%;
-    height: auto;
   }
   .footer_nav{
     display: none;

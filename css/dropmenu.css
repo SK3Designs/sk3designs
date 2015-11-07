@@ -84,6 +84,9 @@ nav ul ul li {
 --------------------------------------------- */
 
 @media all and (max-device-width: 768px) {
+  #drop_menu{
+    margin-top: -50px;
+  }
   nav {
     margin: 0;
   }
