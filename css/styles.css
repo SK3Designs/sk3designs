@@ -21,44 +21,6 @@ a{
   border-radius: 5px;
   text-decoration: none;
 }
-.btn-xlarge-bold{
-  margin: 50px 0px 0;
-  padding: 10px 40px;
-  font-size: 26px; //change this to your desired size
-  line-height: normal;
-  -webkit-border-radius: 8px;
-     -moz-border-radius: 8px;
-          border-radius: 8px;
-  border-radius: 0px;
-  border: 1px solid #5d747a;
-  background-color: #b1ddf6;
-  color: snow;
-}
-.btn-xlarge-bold:hover{
-  opacity: 0.85;
-  color: snow;
-  background-color: #b1ddf6;
-}
-.btn-xlarge {
-    padding: 10px 32px;
-    font-size: 22px; //change this to your desired size
-    line-height: normal;
-    -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
-    border-radius: 0px;
-    border: 1px solid #085c07;
-}
-.btn-default-green{
-  margin: 50px 0px 0;
-  background-color:  #84ae83;
-  color: snow;
-}
-.btn-default-green:hover{
-  opacity: 0.85;
-  background-color: #84ae83;
-  color: snow;
-}
 .container{
   margin: 0 auto;
 }
@@ -81,10 +43,6 @@ body {
   text-align: center;
   margin-top: -10px;
   height: 42px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: 2px solid #085c07;
-  border-bottom: 2px solid #085c07;
-
 }
 .nav li{
   display: inline-block;
@@ -97,7 +55,7 @@ body {
     color:  #f0feed;
 }
 .footer_nav li a{
-  color:  black;
+  color:  white;
 }
 .nav li a:hover, .footer_nav li a:hover{
   color: #085c07;
@@ -106,153 +64,58 @@ body {
   text-decoration: none;
 }
 #logo{
+  margin-top: -50px;
   text-align: center;
   padding: 5px;
 }
 #logo img{
   max-width: 350px;
 }
-.mobile_only{
-  display: none;
-}
 .info{
   display: inline;
+  margin-top: 25px;
 }
 .info img{
-  margin-top: 15px;
-  margin-bottom: -25px;
+  margin: 45px -100px 0px;
   padding: 5px;
-  float: left;
-  height: 300px;
-  width: 33.33%;
-  max-width: 50%;
+  width: 250px;
+  height: 250px;
+  border: 4px solid #0a7c0a;
+  border-radius: 100%;
 }
-#about{
-  margin-top: 175px;
+.info img:hover{
+  opacity: .65;
 }
-#intro{
-  max-width: 800px;
-  margin: 175px auto 0;
-}
-#intro p{
+.info_subtitle{
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
   font-size: 1.5em;
-}
-#projects{
-  margin-top: 200px;
+  padding: 20px;
 }
 .project{
-  border: 4px solid #84ae83;
-  border-radius: ;
-  margin-top: 25px;
-  max-width: 24%;
-  padding: 5px;
-  height: auto;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 20px;
 }
-.contacts{
-  margin-top: 100px;
+.project h1{
+  color:  #6BA0FA
 }
-#contact{
-  padding: 87px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+.project h3{
+  color: #0a7c0a;
 }
-#contact h1, #contact h2,#contact h3,#contact p{
-  color: inherit;
-}
-.well{
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0px;
-  border: none;
-}
-.well legend {
+.project p, .project h4{
+  margin: auto;
   color: snow;
-}
-.form-control{
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 0px;
-}
-.controls li{
-  color: snow;
-  list-style: none;
-  text-align: left;
-}
-.btn-contact{
-  margin: 3px;
-  background-color: rgba(132, 174, 131, 0.75);;
-  border: none;
-}
-.btn-contact:hover{
-  background-color: #083c07;
-  color: snow;
-}
-.btn-contact:active{
-  background-color: #083c07;
-}
-#services-header{
   max-width: 600px;
-  margin: 0 auto;
-}
-#services-left{
-  max-width: 1200px;
-  margin: 50px auto 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  min-height: 211px;
-  text-align: right;
-  color: snow;
-}
-#services-left h2, #services-left p{
-  color: snow;
-}
-#services-left p{
-  margin-left: 240px;
-  text-align: left;
-}
-#services-left img{
-  border: 4px solid #84ae83;
-  height: 175px;
-  float: left;
-}
-#services-right{
-  max-width: 1200px;
-  margin: 50px auto 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  min-height: 211px;
-  height: auto;
-  text-align: left;
-  color: snow;
-}
-#services-right h2, #services-right p{
-  color: snow;
-}
-#services-right img{
-  border: 4px solid #84ae83;
-  height: 175px;
-  float: right;
-}
-#products{
-  margin: 75px 25px 0;
-  background-color:
-  padding: 25px;
-}
-#products h1, #products p{
-  margin: 30px;
-  color: black;
-}
-#products img{
-  margin: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 20px;
-  max-width: 33.33%;
-}
-#project{
-  margin-top: 50px;
 }
 #footer{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 150px;
-  border-top: 2px solid #085c07;
+  background-color: rgba(0, 0, 0, .8);
+  margin-top: 250px;
+  border-top: 2px solid snow;
 }
 .footer_nav{
   margin-top: 20px;
@@ -267,6 +130,7 @@ body {
 
 }
 #footer img{
+  margin: -50px inherit;
   padding: 10px;
   max-width: 150px;
 }
@@ -285,16 +149,6 @@ body {
 #contact_phone{
   display: none;
 }
-@media screen and (max-device-width: 1096px) {
-  .btn-xlarge-bold{
-    font-size: 24px;
-  }
-}
-@media screen and (max-device-width: 992px) {
-  .btn-xlarge-bold{
-    font-size: 16px;
-  }
-}
 @media screen and (max-device-width: 768px) {
   body{
     -webkit-text-size-adjust: none;
@@ -312,11 +166,6 @@ body {
   .mobile_only{
     display: inline-block;
   }
-  .btn-xlarge-bold {
-    font-size: 22px;
-    background-color: #84ae83;
-    margin-left: -2px;
-  }
   .nav li{
     font-size: 20px;
     font-weight: bolder;
@@ -329,54 +178,6 @@ body {
     width: auto;
     max-width: 100%;
     height: auto;
-  }
-  #projects{
-    display: none;
-  }
-  #about{
-    margin: 100px auto 10px;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  #about h2{
-    margin-bottom: 15px;
-  }
-  #about h2, #about p{
-    color: snow;
-  }
-  #intro{
-    max-width: 100%;
-    margin: 100px auto 10px;
-    padding: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  #intro h2, #intro p{
-    color: snow;
-  }
-  #services-header p{
-    display: none;
-  }
-  #services-right img, #services-left img{
-    display: none;
-  }
-  #services-left h2, #services-right h2{
-    text-align: center;
-  }
-  #services-left p {
-    margin-left:0px;
-    text-align: left;
-  }
-  #products img{
-    max-width: 100%;
-    margin: 10px auto;
-  }
-  #project img{
-    max-width: 100%;
-    margin: 10px auto;
-  }
-  .well{
-    margin: 50px auto auto;
-    max-width: 120%;
   }
   .footer_nav{
     display: none;

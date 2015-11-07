@@ -12,11 +12,8 @@ nav {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -120px;
   height: 42px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: 2px solid #085c07;
-  border-bottom: 2px solid #085c07;
 }
 nav:after {
   content: "";
@@ -46,13 +43,19 @@ nav ul li {
 nav a {
   display: block;
   padding: 20px;
-  color:  #f0feed;
+  color:  #6BA0FA;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
 }
 nav a:hover {
-  color: #085c07;
+  color: snow;
+  text-shadow: 0 1px 0 rgba(0, 255, 230, 0.4);
+  background-color: ;
+  text-decoration: none;
+}
+nav a:active {
+  color: snow;
   text-shadow: 0 1px 0 rgba(0, 255, 230, 0.4);
   background-color: ;
   text-decoration: none;
