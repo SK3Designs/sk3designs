@@ -135,13 +135,14 @@ body {
   max-width: 150px;
 }
 #footer p{
-  color: snow;
+  color:  #6BA0FA;
   margin-top: -15px;
   text-align: right;
   font-size: 14px;
   font: cursive;
 }
 #footer a{
+  color:  #6BA0FA;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
