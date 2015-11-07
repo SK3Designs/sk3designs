@@ -172,14 +172,6 @@ body {
     font-weight: bolder;
     margin-top: -20px;
   }
-  .info img{
-    float: none;
-    margin: 15px auto;
-    padding: 5px;
-    width: auto;
-    max-width: 100%;
-    height: auto;
-  }
   .footer_nav{
     display: none;
   }
