@@ -155,6 +155,7 @@ body {
     -webkit-text-size-adjust: none;
   }
   #logo img{
+    margin-top: 25px;
     max-width: 300px;
   }
   .info_mobile{
