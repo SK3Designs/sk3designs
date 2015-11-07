@@ -108,14 +108,14 @@ nav ul ul li {
     background-color: ;
     margin-top: -10px;
     padding: 14px 20px;
-    color:  #6BA0FA
+    color:  #6BA0FA;
     font-size: 22px;
     text-decoration: none;
     border: none;
   }
   .toggle:hover {
     background-color: ;
-    color: #085c07;
+    color: snow;
     text-shadow: 0 1px 0 rgba(0, 255, 230, 0.4);
   }
 
