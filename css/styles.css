@@ -1,13 +1,13 @@
 h1,h2,h3,h4,h5{
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
-  color: black;
+  color: snow;
 }
 p,
 p:hover:after,
 p:focus,
 p:hover{
   font-family: 'Covered By Your Grace';
-  color: black;
+  color: snow;
   text-decoration: none;
   font-size: 18px;
 	font-style: normal;
@@ -16,7 +16,7 @@ p:hover{
 	line-height: 23px;
 }
 a{
-  color: black;
+  color: snow;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -111,14 +111,23 @@ body {
   color: snow;
   max-width: 600px;
 }
+#address{
+  margin-top: 250px;
+  margin-left: 55px;
+  background-color: rgba(0, 0, 0, .5);
+}
+#address p{
+  font-size: 1.5em;
+}
 #footer{
   width: 100%;
   background-color: rgba(0, 0, 0, .8);
-  margin-top: 250px;
+  margin-top: -7px;
   border-top: 2px solid snow;
+  height: 175px;
 }
 .footer_nav{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .footer_nav li{
   display: inline;
@@ -130,22 +139,21 @@ body {
 
 }
 #footer img{
-  margin: -50px inherit;
+  margin: -60px inherit;
   padding: 10px;
   max-width: 150px;
-}
-#footer p{
-  color:  #6BA0FA;
-  margin-top: -15px;
-  text-align: right;
-  font-size: 14px;
-  font: cursive;
 }
 #footer a{
   color:  #6BA0FA;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+}
+#company_name{
+  opacity: .5;
+  font-size: 1.1em;
+  margin: -30px -75px;
+  text-align: left;
 }
 #contact_phone{
   display: none;
