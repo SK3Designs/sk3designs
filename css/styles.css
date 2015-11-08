@@ -57,14 +57,14 @@ body {
 .footer_nav li a{
   color:  white;
 }
-.nav li a:hover, .footer_nav li a:hover{
+.nav li a:hover, .footer_nav li a:hover, .nav li a:hover::after{
   color: #085c07;
   text-shadow: 0 1px 0 rgba(0, 255, 230, 0.4);
   background-color: inherit;
   text-decoration: none;
 }
 #logo{
-  margin-top: -50px;
+  margin-top: -30px;
   text-align: center;
   padding: 5px;
 }
@@ -73,10 +73,10 @@ body {
 }
 .info{
   display: inline;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .info img{
-  margin: 45px -100px 0px;
+  margin: 55px -100px 0px;
   padding: 5px;
   width: 250px;
   height: 250px;
@@ -92,6 +92,12 @@ body {
   border-radius: 10px;
   font-size: 1.5em;
   padding: 20px;
+}
+.info_subtitle h2{
+  color:  #6BA0FA
+}
+.info_subtitle p{
+  font-size: 1.2em;
 }
 .project{
   margin-top: 100px;
