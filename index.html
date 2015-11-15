@@ -35,9 +35,9 @@
             <img src="img/entry.jpg">
             <div class="info_subtitle">
               Services provided include general maintenance, janitorial and landscape services, maintenance and
-  repair of HVAC (heating, ventilating and air conditioning), plumbing, electrical, lighting and
-  mechanical systems, fire/safety/code compliance, project management for construction and
-  remodeling.
+              repair of HVAC (heating, ventilating and air conditioning), plumbing, electrical, lighting and
+              mechanical systems, fire/safety/code compliance, project management for construction and
+              remodeling.
             </div>
           </div>
           <div class="col-md-4" id="contact">
@@ -47,7 +47,7 @@
               Building Maintenance performs general repairs to buildings and preventive maintenance of
               systems and equipment.
             </div>
-            <div class="info_subtitle">
+            <div class="info_subtitle contact_us">
               <h2>Contact Us</h2>
               <h3>Phone:</h3>
               <p>(425)123-4567</p>
@@ -71,35 +71,32 @@
     <div class="project">
       <h1>Start a Project</h1>
 
-<p>Contractor Services projects begin with a request through my.FS.Portal. Projects over $250,000
+      <p>Contractor Services projects begin with a request through my.FS.Portal. Projects over $250,000
+      begin with Capital Programs.
+      Contact the Service Office to submit a work request. Please provide the following:</p>
 
-begin with Capital Programs.
+      <h3>Required Information</h3>
 
-Contact the Service Office to submit a work request. Please provide the following:</p>
+      <p>∙ Work order type</p>
 
-<h3>Required Information</h3>
+      <p>∙ Building Code Approval</p>
 
-<p>∙ Work order type</p>
+      <p>∙ Description of work</p>
 
-<p>∙ Building Code Approval</p>
+      <h3>Recommended Information</h3>
 
-<p>∙ Description of work</p>
+      <p>∙ Contact (if other than the requestor)</p>
 
-<h3>Recommended Information</h3>
+      <p>∙ Scope and/or budget information (may be attached as a separate document)</p>
 
-<p>∙ Contact (if other than the requestor)</p>
+      <p>∙ Date by which the project must be completed</p>
 
-<p>∙ Scope and/or budget information (may be attached as a separate document)</p>
+      <p>∙ Preferred delivery method</p>
 
-<p>∙ Date by which the project must be completed</p>
-
-<p>∙ Preferred delivery method</p>
-
-<p>∙ Special instructions for project execution</p>
-<br>
-<p>Once you submit a work request, the Service Office creates a work order and routes to the
-
-appropriate construction superintendent.<p>
+      <p>∙ Special instructions for project execution</p>
+      <br>
+      <p>Once you submit a work request, the Service Office creates a work order and routes to the
+      appropriate construction superintendent.<p>
     </div>
     </div>
     <div id="address"><p>We are located in Everett, WA 132 St. 900 Block Building 105-D</p></div>
@@ -117,6 +114,26 @@ appropriate construction superintendent.<p>
             </div>
           </div>
           <script src="js/jquery-1.11.3.js"></script>
-          <script src="js/scripts.js"></script>
+          <script>
+
+          	$(function(){
+          		setSizeAlerts();
+          	  	$(window).resize(function(){
+          			setSizeAlerts();
+          		});
+          	 });
+
+          	function setSizeAlerts() {
+          		if ($(window).width() >= 1100){
+                $(".contact").click(function() {
+                    $('html,body').animate({
+                        scrollTop: $("#contact").offset().top+320},
+                        'slow');
+                });
+          		}
+              else{}
+          	}
+
+          </script>
   </body>
   </html>

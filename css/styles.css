@@ -172,16 +172,6 @@ body {
     margin-top: 5px;
     max-width: 300px;
   }
-  .info_mobile{
-    display: none;
-  }
-  .info_mobile_display{
-    width: 95%;
-    margin: 0 auto;
-  }
-  .mobile_only{
-    display: inline-block;
-  }
   .nav li{
     font-size: 20px;
     font-weight: bolder;
@@ -190,17 +180,15 @@ body {
   .footer_nav{
     display: none;
   }
-  #address, #company_name{
+  #address, #company_name, .contact_us{
     display: none;
   }
   #contact_phone{
     display: block;
   }
-  #footer a{
-
-  }
   #footer{
-    min-height: 90px;
+    height: 90px;
+    margin-top: 50px;
   }
   #footer a{
     margin-top: 30px;
