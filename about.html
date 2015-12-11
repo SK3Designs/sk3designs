@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html>
+<head>
+	<title>Paw To Hoof Pet Services - Bothell, Washington  Dog Walking, Pet Care Visits, Private Boarding, and Horse Care in Bothell,WA</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/dropmenu.css" rel="stylesheet">
+	<link href="css/ptf.css" rel="stylesheet">
+  <style>
+  * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+html,
+body {
+  height: 103%;
+}
+
+body {
+  margin: 0;
+  background: url(img/background4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 1.3em;
+  color: #FFFAC8;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+section {
+  float: left;
+  width: 100%;
+  background: url(img/background2.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 5px 0px #333;
+}
+.content{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
+}
+/* the important styles */
+
+.arrow-wrap {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -10em;
+  margin-left: -5em;
+  background: #111;
+  width: 10em;
+  height: 10em;
+  padding: 4em 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block;
+  box-shadow: 0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float: left;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
+}
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: -3.2em;
+  left: -3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
+}
+
+.hint {
+  position: absolute;
+  top: 0.6em;
+  width: 100%;
+  left: 0;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+.arrow-wrap:hover .hint {
+  opacity: 1;
+}
+
+@-webkit-keyframes arrows {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 12%;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: 12%;
+  }
+  40% {
+    top: -12%;
+  }
+  50% {
+    top: 12%;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: 12%;
+  }
+  80% {
+    top: -12%;
+  }
+  90% {
+    top: 12%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.arrow-wrap .arrow {
+  -webkit-animation: arrows 2.8s 0.4s;
+  -webkit-animation-delay: 3s;
+}
+/*  this is the unimportant CSS used just to layout the content  */
+
+header{
+  float: left;
+  width: 100%;
+  height: calc(100% - 3em);
+}
+#logo {
+height: 300px;
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
+}
+#logo img{
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 100%;
+  margin: 40px 33%;
+  max-width: 450px;
+}
+.intro{
+  margin-top: 50px;
+}
+.intro h1{
+  font-size: 3em;
+  color: #FFFAC8;
+  text-shadow: 3px 3px 3px #000;
+}
+.intro p{
+  font-size: 1.7em;
+  color: #FFFAC8;
+}
+.town{
+  font-size: 1.1em;
+  color: #FFFAC8;
+}
+.learn_more{
+  margin-top: 2.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+.services h2{
+  color: white;
+  margin-top: 75px;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #8B7867;
+}
+.services h4{
+  color: white;
+  font-size: 2em;
+  margin-top: 100px;
+  text-shadow: 2px 2px 2px #8B7867;
+}
+.services_type{
+  margin-top: 25px;
+  margin-bottom: 500px;
+  width: 200px;
+  height: 190px;
+  border-radius: 100%;
+  padding: 4px;
+  border: 4px solid #C8FFCC;
+}
+.walking{
+  display: none;
+  margin-top: 10px;
+}
+.walking-menu{
+  margin-top: -0px;
+}
+#walking h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#walking p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.walk-price{
+  margin-left: 90px;
+}
+.training{
+  display: none;
+  margin-top: 10px;
+}
+#training h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#training p{
+  font-size: 1.6em;
+}
+.puppy{
+  display: none;
+  margin-top: 20px;
+}
+.puppy-menu{
+  margin-top: -50px;
+}
+#puppy h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#puppy p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.horsecare{
+  display: none;
+  margin-top: 20px;
+}
+.horsecare-menu{
+  margin-top: -50px;
+}
+#horsecare h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#horsecare p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.nav{
+  display: block;
+    position: absolute;
+    top:0;
+    width:100%;
+    height:40px;
+    background:rgba(0, 0, 0, 0.1);;
+    z-index: 999;
+    }
+.menu{
+  float: none;
+  padding: 0;
+  margin-top: -2.8em;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+.menu li{
+  margin: 1.5em;
+  display: inline-block;
+  float: none;
+
+}
+.menu a{
+  display: block;
+  padding: 20px;
+  color:  #C8FFCC;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+.about{
+  font-size: 1.6em;
+  display: none;
+}
+#about-h1{
+  margin-top: 2em;
+  font-size: 3.65em;
+  text-shadow: 2px 2px 2px #8B7867;
+}
+.about_landing{
+  margin-top: 3em;
+}
+.about_landing h4{
+  color: #C8FECC;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 1px #3F4142;
+}
+.about_landing h5{
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+.about_type{
+  margin-top: 25px;
+  margin-bottom: 500px;
+  width: 225px;
+  height: 215px;
+  border-radius: 100%;
+  padding: 4px;
+  border: 4px solid #9CC4F5;
+}
+.about_type:hover{
+	border: 4px solid #FFFAC8;
+	opacity: 1;
+}
+.karen, .brenda, .nadia{
+  display: none;
+	margin-top: -25em;
+  padding: 3em;
+}
+.karen img, .brenda img, .nadia img{
+  border-radius: 100%;
+  margin: -3em 1em 3em;
+}
+.karen h2, .brenda h2, .nadia h2{
+	text-shadow: 2px 2px 2px #3F4142;
+}
+.karen h3, .brenda h3, .nadia h3{
+  color: #C8FECC;
+  font-size: 1.3em;
+	text-shadow: 1px 1px 1px #3F4142;
+}
+.karen p, .brenda p, .nadia p{
+	font-size: 1.2em;
+	padding: 1em;
+}
+.karen a{
+	text-decoration: none;
+	color: #299BBF;
+}
+  </style>
+<body>
+<div class="content contianer" id="content">
+  <div class="row">
+    <div><h1 id="about-h1">About Us</h1></div>
+    <div class="about_landing">
+      <div class="col-md-4 about_landing col-md-push-4">
+        <h4>Karen</h4>
+        <h5>Owner</h5>
+        <a id="karen"><img class="about_type karen-img" src="img/pic2.jpg"></a>
+      </div>
+      <div class="col-md-4 about_landing col-md-pull-4" >
+        <h4>Brenda</h4>
+        <h5>"Dog Walker, Horse and Farm Animal Guru"</h5>
+        <a id="brenda"><img class="about_type brenda-img" src="img/brenda.jpg"></a>
+      </div>
+      <div class="col-md-4 about_landing" >
+        <h4>Nadia</h4>
+        <h5>"Dog Walker, and Pet Sitting Guru"</h5>
+        <a id="nadia"><img class="about_type nadia-img" src="img/nadia.jpg"></a>
+      </div>
+    </div>
+    <div class="col-md-1 about"></div>
+    <div class="col-md-10 about">
+
+      <div class="karen">
+        <h2>Karen</h2>
+        <h3>Owner</h3>
+        <p>Hello! My name is Karen Casey, <a href="http://www.ccpdt.org/">CPDT-KA</a>, owner of
+        Paw To Hoof Pet Services. I have been in the pet service business since 2002 caring for dogs,
+        cats, horses, small farm animals, and pockets pets. Throughout my many years in the
+        pet service business, I have continued to grow my experience and education in the
+        many facets of training dogs and horses. My degree in Horse Management, with a
+        focus on training, from The Ohio State University and my Professional
+        Dog Training Certification &#8211 Knowledge Assessed from the Council of
+        Certified Professional Dog Trainers has allowed me to help owners better
+        understand their pets and recommend ways to resolve or manage issues.
+        I continue to enjoy attending horse training clinics and dog training seminars,
+        in my spare time, to stay current and further my animal training education.
+
+        Currently, my husband and I enjoy living with our amazing, Canine Good Citizen Certified dog,
+        Boo, and our senior cat, Odie. My pets are my kids and I understand the concerns pet owners
+        face when they need to leave their pet behind. I treat my clients pets like they are my own
+        with a lot of love, care, and attention. Having a horse and dog educational background as well
+        as years of hands on experience has made me a qualified and well rounded pet service
+        provider for your four-legged kids. I hope to meet you and your fur-kids soon!
+        </p>
+    </div>
+
+    <div class="brenda">
+      <h2>Brenda</h2>
+      <h3>Dog Walker, Horse and Small Farm Animal Guru</h3>
+      <p>My name is Brenda Barton, and I have always been a huge animals-of-all-kinds lover
+      and have lived on a farm for the last 25 years.  During that time I have owned and
+      cared for all manner of critters including dogs, of course, cats, sheep, llamas, goats,
+      and beef cows.  I have owned and enjoyed horses since 1991, having at least two and as
+      many as four at any given time; my husband and I currently live with three on our
+      small farm in Duvall, along with our one dog, two cats, pigs, chickens, ducks and
+      guinea fowl.  Since the early 90's I have been interested in <q>Natural Horsemanship</q>
+      and am an avid student of the horse and the principles of developing my horses to
+      be willing partners.  I have also participated in many workshops, covering
+      everything from saddle fitting, to horse massage, hoof care, nutrition and
+      various alternative modalities, as well as an 7-week
+      Equine Assisted Learning program.  I believe animals can be an important addition
+      to our quality of life, and it&#8217s important to me to provide a happy, healthy,
+      balanced life for them.
+      </p>
+    </div>
+    <div class="nadia">
+      <h2>Nadia</h2>
+      <h3>Dog Walker, Puppy Play'N'Learn and Pet Sitting Guru</h3>
+      <p>My name is Nadia Tufnell, and working with animals is my passion!
+      I have a degree in Animal Behavior and have been providing pet care
+      services for many years.  I am currently a cat care specialist
+      volunteer for the Northwest Organization for Animal Help (NOAH)
+      and have volunteered with the Everett Animal Shelter.
+      I have experience with farm animals from working on a
+      horse farm for a year, interning at Farm Sanctuary&#8217s
+      Animal Acres, and volunteering at Pasado&#8217s Safe Haven.
+      I have also volunteered at Sarvey Wildlife Care, helping to
+      rehabilitate wild animals. I currently have two cats named Popoki and Dixie.
+      </p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="container">
+          <ul class="menu">
+            <li><a href="index.html#content">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+  </div>
+  </div>
+
+	<footer class="footer">
+    <div class="container">
+          <ul class="menu">
+            <li><a href="#content">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+					</ul>
+  </div>
+</footer>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

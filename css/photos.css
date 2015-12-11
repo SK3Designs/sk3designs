@@ -1,0 +1,74 @@
+ul.rig {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+  padding-right: 35px;
+}
+ul.rig li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	background: #fff;
+	vertical-align: top;
+}
+ul.rig li img {
+	max-width: 125%;
+	min-height: 116px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+	margin: 0 0 10px;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+	width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+  height: 116px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+	width: 22.5%; /* this value + 2.5 should = 25% */
+}
+div div p {
+	display: none;
+	color: white;
+}
+
+@media (max-device-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+  ul.rig li img{
+    max-width: ;
+		width: 800px;
+  }
+  ul.rig li a{
+    pointer-events: none;
+  }
+  ul.rig.columns-3 li {
+    height: auto;
+  }
+
+	div div p {
+		display: block;
+		color: white;
+	}
+	.pictures{
+		margin-top: -475px;
+	}
+}

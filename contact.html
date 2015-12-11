@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html>
+<head>
+	<title>Paw To Hoof Pet Services - Bothell, Washington  Dog Walking, Pet Care Visits, Private Boarding, and Horse Care in Bothell,WA</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/dropmenu.css" rel="stylesheet">
+	<link href="css/ptf.css" rel="stylesheet">
+  <style>
+  * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+html,
+body {
+  height: 103%;
+}
+
+body {
+  margin: 0;
+  background: url(img/background5.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 1.3em;
+  color: #FFFAC8;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+section {
+  float: left;
+  width: 100%;
+  background: url(img/background2.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 0 5px 0px #333;
+}
+.content{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .35),  rgba(0, 0, 0, 0));
+}
+/* the important styles */
+
+.arrow-wrap {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -10em;
+  margin-left: -5em;
+  background: #111;
+  width: 10em;
+  height: 10em;
+  padding: 4em 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block;
+  box-shadow: 0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float: left;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
+}
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: -3.2em;
+  left: -3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform: rotate(360deg)
+}
+
+.hint {
+  position: absolute;
+  top: 0.6em;
+  width: 100%;
+  left: 0;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+.arrow-wrap:hover .hint {
+  opacity: 1;
+}
+
+@-webkit-keyframes arrows {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 12%;
+  }
+  20% {
+    top: 0;
+  }
+  30% {
+    top: 12%;
+  }
+  40% {
+    top: -12%;
+  }
+  50% {
+    top: 12%;
+  }
+  60% {
+    top: 0;
+  }
+  70% {
+    top: 12%;
+  }
+  80% {
+    top: -12%;
+  }
+  90% {
+    top: 12%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.arrow-wrap .arrow {
+  -webkit-animation: arrows 2.8s 0.4s;
+  -webkit-animation-delay: 3s;
+}
+/*  this is the unimportant CSS used just to layout the content  */
+
+header{
+  float: left;
+  width: 100%;
+  height: calc(100% - 3em);
+}
+#logo {
+height: 300px;
+background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
+}
+#logo img{
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 100%;
+  margin: 40px 33%;
+  max-width: 450px;
+}
+.intro{
+  margin-top: 50px;
+}
+.intro h1{
+  font-size: 3em;
+  color: #FFFAC8;
+  text-shadow: 3px 3px 3px #000;
+}
+.intro p{
+  font-size: 1.7em;
+  color: #FFFAC8;
+}
+.town{
+  font-size: 1.1em;
+  color: #FFFAC8;
+}
+.learn_more{
+  margin-top: 2.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+.services h2{
+  color: white;
+  margin-top: 75px;
+  font-size: 4em;
+  text-shadow: 2px 2px 2px #8B7867;
+}
+.services h4{
+  color: white;
+  font-size: 2em;
+  margin-top: 100px;
+  text-shadow: 2px 2px 2px #8B7867;
+}
+.services_type{
+  margin-top: 25px;
+  margin-bottom: 500px;
+  width: 200px;
+  height: 190px;
+  border-radius: 100%;
+  padding: 4px;
+  border: 4px solid #C8FFCC;
+}
+.walking{
+  display: none;
+  margin-top: 10px;
+}
+.walking-menu{
+  margin-top: -0px;
+}
+#walking h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#walking p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.walk-price{
+  margin-left: 90px;
+}
+.training{
+  display: none;
+  margin-top: 10px;
+}
+#training h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#training p{
+  font-size: 1.6em;
+}
+.puppy{
+  display: none;
+  margin-top: 20px;
+}
+.puppy-menu{
+  margin-top: -50px;
+}
+#puppy h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#puppy p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.horsecare{
+  display: none;
+  margin-top: 20px;
+}
+.horsecare-menu{
+  margin-top: -50px;
+}
+#horsecare h3{
+  color: #C8FFCC;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+#horsecare p{
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+.nav{
+  display: block;
+    position: absolute;
+    top:0;
+    width:100%;
+    height:40px;
+    background:rgba(0, 0, 0, 0.1);;
+    z-index: 999;
+    }
+.menu{
+  float: none;
+  padding: 0;
+  margin-top: -2.8em;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+.menu li{
+  margin: 1.5em;
+  display: inline-block;
+  float: none;
+
+}
+.menu a{
+  display: block;
+  padding: 20px;
+  color:  #C8FFCC;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+.about{
+  font-size: 1.6em;
+  display: none;
+}
+#about-h1{
+  margin-top: 1.5em;
+  font-size: 3.6em;
+  text-shadow: 3px 3px 3px #8B7867;
+}
+.about_landing{
+  margin-top: 5em;
+}
+.about_landing h4{
+  font-size: 2.2em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+.about_landing h5{
+  color: #C8FECC;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px #8B7867;
+}
+.about_type{
+  margin-top: 25px;
+  margin-bottom: 500px;
+  width: 225px;
+  height: 215px;
+  border-radius: 100%;
+  padding: 4px;
+  border: 4px solid #C8FFCC;
+}
+.contacts{
+  margin-top: 14em;
+}
+#contact{
+  padding: 87px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-height: 400px;
+}
+#contact h2,#contact h3,#contact p{
+  color: inherit;
+  font-size: 1.6em;
+}
+.well{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
+  border: none;
+}
+.well legend {
+  color: #FFFAC8;
+}
+.form-control{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px;
+}
+.controls li{
+  color: snow;
+  list-style: none;
+  text-align: left;
+}
+.btn-contact{
+  margin: 3px;
+  background-color: #9CC4F5;
+  border: none;
+}
+.btn-contact:hover{
+  background-color: #FFF;
+  color: snow;
+}
+.btn-contact:active{
+  background-color: #FFF;
+}
+  </style>
+<div class="content contianer" id="content">
+  <div class="row">
+    <div class="row contacts">
+      <div class="col-md-1"></div>
+      <div class="col-md-5" id="contact">
+        <h1>Contact Us</h1>
+        <h3>Phone</h3>
+        <p>(425)686-8743</p>
+        <h3>Email</h3>
+        <p>info@pawtohoof.com</p>
+        <p>
+        </p>
+      </div>
+     <div class="col-md-5">
+       <form name="sentMessage" class="well" id="contactForm"  novalidate>
+         <legend>Schedule a Consult Today!</legend>
+         <div class="control-group">
+           <div class="controls">
+           <input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+              <p class="help-block"></p>
+           </div>
+         </div>
+         <div class="control-group">
+           <div class="controls">
+             <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+           </div>
+         </div>
+
+         <div class="control-group">
+           <div class="controls">
+             <textarea rows="10" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+           </div>
+         </div>
+         <div id="success"> </div>
+         <button type="submit" class="btn pull-right btn-contact">Send</button><br />
+       </form>
+    </div>
+  </div>
+</div>
+
+
+  <div class="nav">
+    <div class="container">
+          <ul class="menu">
+						<li><a href="index.html#content">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+  </div>
+  </div>
+
+	<footer class="footer">
+		<div class="container">
+					<ul class="menu">
+						<li><a href="#content">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="contact.html">Contact</a></li>
+				</ul>
+	</div>
+	</footer>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

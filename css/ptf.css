@@ -1,0 +1,238 @@
+body {
+  background: url(../img/back5.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 22px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  overflow-x: hidden;
+}
+
+.row{
+  text-align: center;
+}
+#header_logos{
+  text-align: right;
+  margin: 35px 40px 5px 0px;
+}
+#header_logos img{
+  border-radius: 2px;
+}
+#header_logo_text{
+  text-align: right;
+  margin: 0px 23px 0px 0px;
+  color: white;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+         #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+  font-size: 60%;
+}
+.info{
+  max-width: 550px;
+  -webkit-box-shadow: 8px 9px 30px rgba(0, 0, 0, 1);
+  -moz-box-shadow:    8px 9px 30px rgba(0, 0, 0, 1);
+  box-shadow:         8px 9px 30px rgba(0, 0, 0, 1);
+}
+.info h2 {
+  font-size: 120%;
+}
+.leftcolumn img{
+  margin-top: -70px;
+}
+.btns_nav{
+  margin-top: -25px;
+}
+.subbtn{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 75%;
+  text-shadow: #000 0px 0px 1px,
+        #000 0px 0px 1px,
+        #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px;
+    -webkit-transition: color 1s;
+     -moz-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+.subbtn:hover{
+  text-decoration: none;
+  color:rgb(100,147,253);
+}
+.btn{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 105%;
+  text-shadow: #000 0px 0px 1px,
+        #000 0px 0px 1px,
+        #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px;
+    -webkit-transition: color 1s;
+     -moz-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
+}
+.btn:hover{
+  color:rgb(100,147,253);
+}
+.graphics{
+  background-color: #000;
+  height: 1px;
+  width: 150px;
+  margin: 15px auto;
+}
+.graphics1{
+  background-color: #000;
+  height: 1px;
+  width: 100px;
+  margin: 0 auto;
+}
+.btns_nav_media_top{
+  display: none;
+}
+.btns_nav_media_bottom{
+  display: none;
+}
+#footer{
+  text-align: center;
+  margin: 150px 70px 0 100px;
+  padding-bottom: 25px;
+
+}
+#footer a{
+  display: inline;
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  font-size: 65%;
+  text-shadow:#000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px,
+              #000 0px 0px 1px;
+    -webkit-transition: color 1s;
+     -moz-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s
+}
+#footer a:hover{
+  color:rgb(100,147,253);
+}
+#footer img{
+  margin: 0 auto;
+  display: none;
+}
+#drop_menu{
+  
+  text-align: center;
+  z-index: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  opacity: .75;
+}
+.sub_category{
+  font-size: 75%;
+}
+@media screen and (max-device-width: 992px){
+  .leftcolumn img{
+    max-width: 300px;
+    margin-top: 0px;
+  }
+  .leftcolumn a{
+    display: inline;
+    margin: 0px 8px 0px 8px;
+  }
+  .btns_nav div{
+    display: inline;
+  }
+  .btns_nav_media_top{
+    display: inline;
+  }
+  .btns_nav_media_bottom{
+    display: inline;
+  }
+  .info{
+    margin: 10px auto;
+  }
+  .btns_nav{
+    margin-top: px;
+  }
+}
+@media screen and (max-device-width: 768px) {
+  #header_logos{
+    display: none;
+  }
+  #header_logo_text{
+    display: none;
+  }
+  .leftcolumn img{
+    margin-top: -50px;
+    width: 400px;
+  }
+  .leftcolumn{
+    margin-top: 20px;
+  }
+  .btns_nav{
+    margin-bottom: 30px;
+  }
+  .info{
+    font-size: 90%;
+  }
+  .info h2{
+    font-size: 135%;
+  }
+  #footer a{
+    display: none;
+  }
+  #footer img{
+    margin-top: -100px;
+    display: block;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .leftcolumn img{
+    margin-top: 0px;
+    min-width: 75%;
+  }
+  .subbtn{
+    display: none;
+  }
+  .btns_nav{
+    display: none;
+  }
+  .btns_nav_media_top, .btns_nav_media_bottom{
+    display: none;
+  }
+  #footer a{
+    display: none;
+  }
+  #footer img{
+    margin-top: -100px;
+    display: block;
+    min-width: 50%;
+  }
+  #drop_menu{
+    text-align: center;
+    width: 100%;
+    margin-top: 0 auto;
+    display: block;
+
+  }
+  .info{
+    max-width: 100%;
+    padding:;
+    margin-top: -30px;
+  }
+  #photonadia, #photokaren, #photobrenda{
+    width: auto;
+    height: 600px;
+  }
+}
