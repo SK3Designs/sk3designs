@@ -6,298 +6,33 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/dropmenu.css" rel="stylesheet">
 	<link href="css/ptf.css" rel="stylesheet">
+	<link href="css/newpaw.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
   <style>
-  * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a:hover{
-  opacity: 0.75;
-	cursor: pointer;
-}
-html,
-body {
-  height: 103%;
-}
+	body {
+	  margin: 0;
+	  background: url(img/background.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  font-size: 1.3em;
+	  color: #FFFAC8;
+	  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	}
 
-body {
-  margin: 0;
-  background: url(img/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-size: 1.3em;
-  color: #FFFAC8;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-section {
-  float: left;
-  width: 100%;
-  background: url(img/background2.jpg) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  box-shadow: 0 0 5px 0px #333;
-}
-/* the important styles */
-
-.arrow-wrap {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: -10em;
-  margin-left: -5em;
-  background: #111;
-  width: 10em;
-  height: 10em;
-  padding: 4em 2em;
-  border-radius: 50%;
-  font-size: 0.5em;
-  display: block;
-  box-shadow: 0px 0px 5px 0px #333;
-}
-
-.arrow {
-  float: left;
-  position: relative;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #ffffff transparent transparent transparent;
-  -webkit-transform: rotate(360deg)
-}
-
-.arrow:after {
-  content: '';
-  position: absolute;
-  top: -3.2em;
-  left: -3em;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #111 transparent transparent transparent;
-  -webkit-transform: rotate(360deg)
-}
-
-.hint {
-  position: absolute;
-  top: 0.6em;
-  width: 100%;
-  left: 0;
-  font-size: 2em;
-  font-style: italic;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-}
-
-.arrow-wrap:hover .hint {
-  opacity: 1;
-}
-
-@-webkit-keyframes arrows {
-  0% {
-    top: 0;
-  }
-  10% {
-    top: 12%;
-  }
-  20% {
-    top: 0;
-  }
-  30% {
-    top: 12%;
-  }
-  40% {
-    top: -12%;
-  }
-  50% {
-    top: 12%;
-  }
-  60% {
-    top: 0;
-  }
-  70% {
-    top: 12%;
-  }
-  80% {
-    top: -12%;
-  }
-  90% {
-    top: 12%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-.arrow-wrap .arrow {
-  -webkit-animation: arrows 2.8s 0.4s;
-  -webkit-animation-delay: 3s;
-}
-/*  this is the unimportant CSS used just to layout the content  */
-
-header{
-  float: left;
-  width: 100%;
-  height: calc(100% - 3em);
-}
-#logo {
-height: 300px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
-}
-#logo img{
-  background-color: rgba(0, 0, 0, 0.35);
-  border-radius: 100%;
-  margin: 40px 33%;
-  max-width: 450px;
-}
-.intro{
-  margin-top: 50px;
-}
-.intro h1{
-  font-size: 3em;
-  color: #FFFAC8;
-  text-shadow: 3px 3px 3px #000;
-}
-.intro p{
-  font-size: 1.7em;
-  color: #FFFAC8;
-}
-.town{
-  font-size: 1.1em;
-  color: #FFFAC8;
-}
-.learn_more{
-  margin-top: 2.5em;
-  text-align: center;
-  font-size: 1.5em;
-}
-.services h2{
-  margin-top: 2em;
-  font-size: 4em;
-  text-shadow: 2px 2px 2px #8B7867;
-}
-.services h4{
-  font-size: 2em;
-  margin-top: 100px;
-  text-shadow: 2px 2px 2px #8B7867;
-}
-.services_type{
-  margin-top: 25px;
-  margin-bottom: 500px;
-  width: 200px;
-  height: 190px;
-  border-radius: 100%;
-  padding: 4px;
-  border: 4px solid #C8FFCC;
-}
-.price{
-	font-size: 1.15em;
-}
-.walking{
-  display: none;
-  margin-top: 20px;
-}
-.walking-menu{
-  margin-top: -0px;
-}
-#walking h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#walking p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.walk-price{
-  margin-left: 90px;
-}
-.training{
-  display: none;
-  margin-top: 20px;
-}
-#training h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#training p{
-  font-size: 1.6em;
-}
-.puppy{
-  display: none;
-  margin-top: 20px;
-}
-.puppy-menu{
-  margin-top: -50px;
-}
-#puppy h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#puppy p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.horsecare{
-  display: none;
-  margin-top: 20px;
-}
-.horsecare-menu{
-  margin-top: -50px;
-}
-#horsecare h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#horsecare p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.nav{
-  display: none;
-    position:fixed;
-    top:0;
-    width:100%;
-    height:40px;
-    background:rgba(0, 0, 0, 0.5);;
-    z-index: 999;
-    }
-.menu{
-  float: none;
-  padding: 0;
-  margin-top: -2.8em;
-  list-style: none;
-  position: relative;
-  text-align: center;
-}
-.menu li{
-  margin: 1.5em;
-  display: inline-block;
-  float: none;
-
-}
-.menu a{
-  display: block;
-  padding: 20px;
-  color:  #C8FFCC;
-  font-weight: bold;
-  font-size: 1.7em;
-  text-decoration: none;
-}
-  </style>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans|Maven+Pro:500' rel='stylesheet' type='text/css'>
+	section {
+	  float: left;
+	  width: 100%;
+	  background: url(img/background2.jpg) no-repeat bottom right fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  position: relative;
+	  box-shadow: 0 0 5px 0px #333;
+	}
+	</style>
 <header>
   <div class="contianer first">
     <div id="logo">
@@ -455,27 +190,38 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
     </div>
   </div>
 
-  <div class="nav">
-    <div class="container">
-          <ul class="menu">
-            <li><a href="#content">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-  </div>
-  </div>
+	<div class="nav">
+		<div class="container">
+					<ul class="menu">
+						<li><a href="index.html#content">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="index.html"><img src="img/logonew2.png"></a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<div id="nav-logo"><div class="nav-logo"></div></div>
+	</div>
+	</div>
 
 	<footer class="footer">
-    <div class="container">
-          <ul class="menu">
-            <li><a href="#content">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-  </div>
-</footer>
+		<div class="container">
+			<div class="row">
+			<a class="col-md-4 col-md-push-4" id="footerImg" href="index.html"><img src="img/logonew2.png"></a>
+					<ul class="footerMenu col-md-4 col-md-pull-4">
+						<li><a href="index.html#content">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="contact.html">Contact</a></li>
+				  </ul>
+
+
+					<div class="col-md-4" id="footerContact">
+						<p>(425)686-8473</p>
+						<p>Karen@pawtohoof.com</p>
+					</div>
+				</div>
+			</div>
+	</footer>
 
 </section>
 <script src="js/jquery-1.11.3.min.js"></script>

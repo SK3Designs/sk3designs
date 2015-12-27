@@ -6,488 +6,136 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/dropmenu.css" rel="stylesheet">
 	<link href="css/ptf.css" rel="stylesheet">
-  <style>
-  * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a:hover{
-  opacity: 0.75;
-  cursor: pointer;
-}
-html,
-body {
-  height: 103%;
-}
-
-body {
-  margin: 0;
-  background: url(img/background6.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-size: 1.3em;
-  color: #FFFAC8;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-section {
-  float: left;
-  width: 100%;
-  background: url(img/background2.jpg) no-repeat bottom right fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  box-shadow: 0 0 5px 0px #333;
-}
-.content{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
-}
-/* the important styles */
-
-.arrow-wrap {
+	<link href="css/newpaw.css" rel="stylesheet">
+	<style>
+		body {
+		margin: 0;
+		background: url(img/background6.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		font-size: 1.3em;
+		color: #FFFAC8;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+		.nav{
+		display: block;
+		}
+		.footer{
+			margin-top: 10em;
+		}
+		.thumbnail{
+			overflow: hidden;
+			margin: 0 auto;
+			border-right: .45em solid #fff;
+		}
+		.thumbnail img{
+			height: 214px;
+			min-width: 102%;
+			max-width: 200%;
+		}
+		a.thumbnail:hover,
+		a.thumbnail:focus,
+		a.thumbnail.active {
+		  border-color: #fff;
+			opacity: .95;
+		}
+		.modal.and.carousel {
   position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: -10em;
-  margin-left: -5em;
-  background: #111;
-  width: 10em;
-  height: 10em;
-  padding: 4em 2em;
-  border-radius: 50%;
-  font-size: 0.5em;
+	margin-top: 5%;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
   display: block;
-  box-shadow: 0px 0px 5px 0px #333;
+  max-width: 100%;
+  min-width: 45em;
+  height: auto;
+	max-height: 40em;
 }
 
-.arrow {
-  float: left;
-  position: relative;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #ffffff transparent transparent transparent;
-  -webkit-transform: rotate(360deg)
-}
-
-.arrow:after {
-  content: '';
-  position: absolute;
-  top: -3.2em;
-  left: -3em;
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 3em 3em 0 3em;
-  border-color: #111 transparent transparent transparent;
-  -webkit-transform: rotate(360deg)
-}
-
-.hint {
-  position: absolute;
-  top: 0.6em;
-  width: 100%;
-  left: 0;
-  font-size: 2em;
-  font-style: italic;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-}
-
-.arrow-wrap:hover .hint {
-  opacity: 1;
-}
-
-@-webkit-keyframes arrows {
-  0% {
-    top: 0;
-  }
-  10% {
-    top: 12%;
-  }
-  20% {
-    top: 0;
-  }
-  30% {
-    top: 12%;
-  }
-  40% {
-    top: -12%;
-  }
-  50% {
-    top: 12%;
-  }
-  60% {
-    top: 0;
-  }
-  70% {
-    top: 12%;
-  }
-  80% {
-    top: -12%;
-  }
-  90% {
-    top: 12%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-.arrow-wrap .arrow {
-  -webkit-animation: arrows 2.8s 0.4s;
-  -webkit-animation-delay: 3s;
-}
-/*  this is the unimportant CSS used just to layout the content  */
-
-header{
-  float: left;
-  width: 100%;
-  height: calc(100% - 3em);
-}
-#logo {
-height: 300px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, .5),  rgba(0, 0, 0, 0));
-}
-#logo img{
-  background-color: rgba(0, 0, 0, 0.35);
-  border-radius: 100%;
-  margin: 40px 33%;
-  max-width: 450px;
-}
-.intro{
-  margin-top: 50px;
-}
-.intro h1{
-  font-size: 3em;
-  color: #FFFAC8;
-  text-shadow: 3px 3px 3px #000;
-}
-.intro p{
-  font-size: 1.7em;
-  color: #FFFAC8;
-}
-.town{
-  font-size: 1.1em;
-  color: #FFFAC8;
-}
-.learn_more{
-  margin-top: 2.5em;
-  text-align: center;
-  font-size: 1.5em;
-}
-.services h2{
-  color: white;
-  margin-top: 75px;
-  font-size: 4em;
-  text-shadow: 2px 2px 2px #8B7867;
-}
-.services h4{
-  color: white;
-  font-size: 2em;
-  margin-top: 100px;
-  text-shadow: 2px 2px 2px #8B7867;
-}
-.services_type{
-  margin-top: 25px;
-  margin-bottom: 500px;
-  width: 200px;
-  height: 190px;
-  border-radius: 100%;
-  padding: 4px;
-  border: 4px solid #C8FFCC;
-}
-.walking{
-  display: none;
-  margin-top: 10px;
-}
-.walking-menu{
-  margin-top: -0px;
-}
-#walking h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#walking p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.walk-price{
-  margin-left: 90px;
-}
-.training{
-  display: none;
-  margin-top: 10px;
-}
-#training h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#training p{
-  font-size: 1.6em;
-}
-.puppy{
-  display: none;
-  margin-top: 20px;
-}
-.puppy-menu{
-  margin-top: -50px;
-}
-#puppy h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#puppy p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.horsecare{
-  display: none;
-  margin-top: 20px;
-}
-.horsecare-menu{
-  margin-top: -50px;
-}
-#horsecare h3{
-  color: #C8FFCC;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-#horsecare p{
-  margin-top: 15px;
-  font-size: 1.6em;
-}
-.nav{
-  display: block;
-    position: absolute;
-    top:0;
-    width:100%;
-    height:40px;
-    background:rgba(0, 0, 0, 0.1);;
-    z-index: 999;
-    }
-.menu{
-  float: none;
-  padding: 0;
-  margin-top: -2.8em;
-  list-style: none;
-  position: relative;
-  text-align: center;
-}
-.menu li{
-  margin: 1.5em;
-  display: inline-block;
-  float: none;
-
-}
-.menu a{
-  display: block;
-  padding: 20px;
-  color:  #C8FFCC;
-  font-weight: bold;
-  font-size: 1.7em;
-  text-decoration: none;
-}
-.about{
-  font-size: 1.6em;
-  display: none;
-}
-#about-h1{
-  margin-top: 1.5em;
-  font-size: 3.6em;
-  text-shadow: 3px 3px 3px #8B7867;
-}
-.about_landing{
-  margin-top: 5em;
-}
-.about_landing h4{
-  font-size: 2.2em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-.about_landing h5{
-  color: #C8FECC;
-  font-size: 1.5em;
-  text-shadow: 1px 1px 1px #8B7867;
-}
-.about_type{
-  margin-top: 25px;
-  margin-bottom: 500px;
-  width: 225px;
-  height: 215px;
-  border-radius: 100%;
-  padding: 4px;
-  border: 4px solid #C8FFCC;
-}
-.contacts{
-  margin-top: 14em;
-}
-#contact{
-  padding: 87px 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  max-height: 400px;
-}
-#contact h2,#contact h3,#contact p{
-  color: inherit;
-  font-size: 1.6em;
-}
-.well{
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0px;
-  border: none;
-}
-.well legend {
-  color: #FFFAC8;
-}
-.form-control{
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 0px;
-}
-.controls li{
-  color: snow;
-  list-style: none;
-  text-align: left;
-}
-.btn-contact{
-  margin: 3px;
-  background-color: rgba(132, 174, 131, 0.75);;
-  border: none;
-}
-.btn-contact:hover{
-  background-color: #083c07;
-  color: snow;
-}
-.btn-contact:active{
-  background-color: #083c07;
-}
-.photo{
-  margin: 1em 2em;
-}
-#photos{
-  margin-top: 10em;
-}
-#photos h1{
-  margin-top: -.75em;
-  margin-bottom: 1.5em;
-  font-size: 3.6em;
-  text-shadow: 3px 3px 3px #8B7867;
-}
-.thumbnail{
-  height: 225px;
-}
-footer{
-	font-size: .8em;
-	border-top: 2px solid #C8FFCC;
-	background-color: rgba(50, 50, 50, 0.8);
-	height: 25.3em;
-}
-.footerMenu{
-	list-style: none;
-	text-decoration: none;
-	margin: 6em 0em 0em -6em;
-}
-.footerMenu li{
-	display: inline;
-}
-.footerMenu a{
-  color:  rgba(255, 255, 255, 0.5);;
-	padding: 1em;
-  font-weight: bold;
-  font-size: 1.6em;
-  text-decoration: none;
-}
-#footerImg img{
-	max-width: 20em;
-	margin: 8em auto 0em;
-}
-#footerContact{
-	color:  rgba(255, 255, 255, 0.7);
-	font-size: 1.6em;
-	font-weight: bold;
-	text-align: right;
-	margin: 2.3em -10em 0em 7em;
-}
-.footerLinks{
-	margin-top: em;
-	margin-left: -4em;
-}
-.footerLinks a{
-	margin-left: 1em;
-	padding: 1em;
-}
-.footerLinks p{
-	font-size: 1.4em;
-	margin-top: .5em;
-	margin-left: 1.2em;
-}
-  </style>
+	@font-face {
+	    font-family: 'Glyphicons Halflings';
+	    src: url('../fonts/glyphicons-halflings-regular.eot');
+	    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+	}
+	</style>
+</head>
   <body>
     <div class="contianer" id="photos">
       <div class="row"><h1>Our Fur Friends</h1></div>
-         <div class="row photo">
-           <div class="col-xs-6 col-md-3">
-              <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+         <div class="row photo" id="photo" id="photo">
+           <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" class=thumbnail><img src="img/friend1thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="1" class=thumbnail><img src="img/friend2thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="2" class=thumbnail><img src="img/friend3thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
-           </div>
-         </div>
-         <div class="row photo">
-           <div class="col-xs-6 col-md-3">
-              <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
-           </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
-           </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
-           </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="3" class=thumbnail><img src="img/friend4thumbnail.jpg"></a>
            </div>
          </div>
-         <div class="row photo">
-           <div class="col-xs-6 col-md-3">
-              <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+				 <div class="row photo" id="photo">
+           <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="4" class=thumbnail><img src="img/friend5thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="5" class=thumbnail><img src="img/friend6thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="6" class=thumbnail><img src="img/friend7thumbnail.jpg"></a>
            </div>
-           <div class="col-xs-6 col-md-3">
-             <a href=# class=thumbnail><img data-src=holder.js/100%x180></a>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="7" class=thumbnail><img src="img/friend8thumbnail.jpg"></a>
+           </div>
+         </div>
+				 <div class="row photo" id="photo">
+           <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="8" class=thumbnail><img src="img/friend9thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="9" class=thumbnail><img src="img/friend10thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="10" class=thumbnail><img src="img/friend11thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="11" class=thumbnail><img src="img/friend12thumbnail.jpg"></a>
+           </div>
+         </div>
+				 <div class="row photo" id="photo">
+           <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="12" class=thumbnail><img src="img/friend13thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="13" class=thumbnail><img src="img/friend14thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="14" class=thumbnail><img src="img/friend15thumbnail.jpg"></a>
+           </div>
+					 <div class="col-xs-6 col-md-3 photos_modal">
+              <a data-toggle="modal" data-target="#lightbox" data-slide-to="15" class=thumbnail><img src="img/friend16thumbnail.jpg"></a>
            </div>
          </div>
     </div>
 
 
-  <div class="nav">
-    <div class="container">
-          <ul class="menu">
-						<li><a href="index.html#content">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-  </div>
-  </div>
+		<div class="nav">
+	    <div class="container">
+	          <ul class="menu">
+							<li><a href="index.html#content">Services</a></li>
+	            <li><a href="about.html">About</a></li>
+							<li><a href="index.html"><img src="img/logonew2.png"></a></li>
+	            <li><a href="photos.html">Photos</a></li>
+	            <li><a href="contact.html">Contact</a></li>
+	        </ul>
+					<div id="nav-logo"><div class="nav-logo"></div></div>
+	  </div>
+	  </div>
 
 	<footer class="footer">
 		<div class="container">
@@ -506,21 +154,96 @@ footer{
 						<p>Karen@pawtohoof.com</p>
 					</div>
 				</div>
-				<div class="col-md-6 footerLinks">
-						<span>
-							<a href="http://www.petsitllc.com/" target="_blank"><img src="img/psi.png" title="Visit PetSitllc.com" alt="Pet Sitters Associates" width="75px"/></a>
-						</span>
-						<span>
-							<a href="http://www.redcross.org/" target="_blank"><img src="img/arc.png" title="Visit RedCross.org" alt="Red Cross Logo"/></a>
-						</span>
-						<span>
-							<a href="http://www.ccpdt.org/" target="_blank"><img src="img/ccpdt.jpeg" title="Visit CCPDT.org" alt="CCPDT Logo" height="38px"/></a>
-						</span>
-						<p>Certified, Licensed, Insured, and Bonded</p>
-					</div>
 			</div>
 	</footer>
+	<div class="modal fade and carousel slide" id="lightbox">
+  <div class="modal-dialog">
+		<div class="modal-content">
+      <div class="modal-body">
+        <ol class="carousel-indicators">
+          <li data-target="#lightbox" data-slide-to="0" class="active"></li>
+          <li data-target="#lightbox" data-slide-to="1"></li>
+          <li data-target="#lightbox" data-slide-to="2"></li>
+					<li data-target="#lightbox" data-slide-to="3"></li>
+					<li data-target="#lightbox" data-slide-to="4"></li>
+					<li data-target="#lightbox" data-slide-to="5"></li>
+					<li data-target="#lightbox" data-slide-to="6"></li>
+					<li data-target="#lightbox" data-slide-to="7"></li>
+					<li data-target="#lightbox" data-slide-to="8"></li>
+					<li data-target="#lightbox" data-slide-to="9"></li>
+					<li data-target="#lightbox" data-slide-to="10"></li>
+					<li data-target="#lightbox" data-slide-to="11"></li>
+					<li data-target="#lightbox" data-slide-to="12"></li>
+					<li data-target="#lightbox" data-slide-to="13"></li>
+					<li data-target="#lightbox" data-slide-to="14"></li>
+					<li data-target="#lightbox" data-slide-to="15"></li>
+					<li data-target="#lightbox" data-slide-to="16"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/friend1.jpg" alt="First slide">
+          </div>
+          <div class="item">
+            <img src="img/friend2.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+            <img src="img/friend3.jpg" alt="Third slide">
+          </div>
+					<div class="item">
+            <img src="img/friend4.jpg" alt="Forth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend5.jpg" alt="Fifth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend6.jpg" alt="Sixth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend7.jpg" alt="Seventh slide">
+          </div>
+					<div class="item">
+            <img src="img/friend8.jpg" alt="Eighth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend9.jpg" alt="Ninth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend10.jpg" alt="Tenth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend11.jpg" alt="Eleventh slide">
+          </div>
+					<div class="item">
+            <img src="img/friend12.jpg" alt="Twevelth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend13.jpg" alt="Thirteenth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend14.jpg" alt="Forthteenth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend15.jpg" alt="fiveteenth slide">
+          </div>
+					<div class="item">
+            <img src="img/friend16.jpg" alt="Sixteenth slide">
+          </div>
+        </div>
+        <!-- /.carousel-inner -->
+        <a class="left carousel-control" href="#lightbox" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#lightbox" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <!-- /.modal-body -->
+    </div>
+    <!-- /.modal-content -->
+  </div>
+</div>
 <script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/photoscript.js"></script>
 </body>
 </html>
