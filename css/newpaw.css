@@ -468,11 +468,3 @@ margin: 3em -10em 0em 7em;
   border-radius: 100%;
   max-width: 20em;
 }
-@media screen and (max-device-width: 1060px){
-  header, .main, .content, .footer, .photo, .menu, .nav, #photos h1{
-    display: none;
-  }
-  .under-construction{
-    display: block;
-  }
-}
