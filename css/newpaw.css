@@ -22,6 +22,7 @@ background-size: cover;
 font-size: 1.3em;
 color: #FFFAC8;
 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+overflow-x: hidden;
 }
 
 section {
@@ -133,8 +134,9 @@ opacity: 1;
 -webkit-animation: arrows 2.8s 0.4s;
 -webkit-animation-delay: 3s;
 }
-/*  this is the unimportant CSS used just to layout the content  */
-
+.row{
+  text-align: center;
+}
 header{
 float: left;
 width: 100%;
