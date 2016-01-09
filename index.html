@@ -32,13 +32,24 @@
 	  position: relative;
 	  box-shadow: 0 0 5px 0px #333;
 	}
-	@media screen and (max-device-width: 768px) {
+	.mobile{
+			display: none;
+	}
+	@media screen and (max-width: 768px) {
 		header{
 			display: none;
 		}
 		section {
 			display: none;
-
+		}
+		body{
+			background: none;
+		}
+		.mobile{
+			display: block;
+		}
+		#logo{
+			margin: 0 auto;
 		}
 	}
 	</style>
@@ -235,6 +246,17 @@
 
 </section>
 
+
+<div class="mobile">
+	<div class="container">
+		<div class="row">
+			<div id="logo">
+	      <a href="index.html"><img src="img/logonew2.png"></a>
+	    </div>
+		</div>
+	</div>
+
+<div>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/script.js"></script>
 </body>
