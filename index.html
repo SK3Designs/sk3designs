@@ -35,7 +35,12 @@
 	.mobile{
 			display: none;
 	}
-	@media screen and (max-width: 768px) {
+	@font-face {
+	    font-family: 'Glyphicons Halflings';
+	    src: url('../fonts/glyphicons-halflings-regular.eot');
+	    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+	}
+	@media screen and (max-device-width: 768px) {
 		header{
 			display: none;
 		}
@@ -50,6 +55,19 @@
 		}
 		#logo{
 			margin: 0 auto;
+			background: none
+		}
+		#logo img{;
+			margin-left: -1%;
+			max-width: 60em;
+		}
+		#drop_menu{
+			display: block;
+			margin: 1.5em auto;
+		}
+		.toggle span{
+			font-size: 2.4em;
+			margin-left: 110%;
 		}
 	}
 	</style>
@@ -249,6 +267,18 @@
 
 <div class="mobile">
 	<div class="container">
+		<div id="drop_menu">
+			<nav>
+				<label for="drop" class="toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></label>
+				<input type="checkbox" id="drop" />
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		</div>
 		<div class="row">
 			<div id="logo">
 	      <a href="index.html"><img src="img/logonew2.png"></a>
