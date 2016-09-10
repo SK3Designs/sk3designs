@@ -41,19 +41,19 @@
 	    src: url('../fonts/glyphicons-halflings-regular.eot');
 	    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 	}
-	@media screen and (max-device-width: 768px) {
+	@media screen and (max-device-width: 320px){
 		header{
 			display: none;
 		}
 		section {
 			display: none;
 		}
-		body {
-			background: url(img/background5.jpg) no-repeat center center fixed;
+		body{
+			background: url(img/background.jpg) no-repeat center center fixed;
 			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: 200%;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
 		}
 		.mobile{
 			display: block;
@@ -191,6 +191,15 @@
 		}
 		#footerText p{
 			padding-bottom: .75em;
+		}
+	}
+	@media screen and (max-device-width: 768px) {
+		body{
+			background: url(img/background.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: 200%;
 		}
 	}
 	</style>
