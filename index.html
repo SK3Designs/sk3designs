@@ -2,7 +2,7 @@
 <!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html>
 <head>
-	<title>Paw To Hoof Pet Services - Bothell, Washington  Dog Walking, Pet Care Visits, Private Boarding, and Horse Care in Bothell,WA</title>
+	<title>Paw To Hoof Pet Services - Sanford, Maine  Dog Walking, Pet Care Visits, Private Boarding, and Horse Care in Sanford, ME</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/dropmenu.css" rel="stylesheet">
 	<link href="css/ptf.css" rel="stylesheet">
@@ -34,6 +34,7 @@
 	}
 	.mobile{
 			display: none;
+			width: 165%;
 	}
 	@font-face {
 	    font-family: 'Glyphicons Halflings';
@@ -51,9 +52,38 @@
 		.mobile{
 			display: block;
 			width: 100%;
+			margin: 0 25%;
+		}
+		.menu{
+		float: none;
+		padding: 1em;
+		margin-top: -1em;
+		margin-left: -30em;
+		margin-right: 10em;
+		list-style: none;
+		position: relative;
+		text-align: center;
+		}
+		.menu li{
+		margin: .5em;
+		display: inline-block;
+		float: none;
+
+		}
+		.menu a{
+		display: block;
+		margin-left: 7em;
+		padding: 20px;
+		color:  #C8FFCC;
+		font-weight: bold;
+		font-size: 1.7em;
+		text-decoration: none;
+		}
+		.menu span{
+			padding: 0 5.2em;
 		}
 		#logo{
-			margin: 0 10%;
+			margin: 0 10% 0 -5%;
 			background: none;
 		}
 		#logo img{;
@@ -63,7 +93,7 @@
 		}
 		#drop_menu{
 			display: block;
-			margin: 1.5em auto;
+			margin: 1.5em;
 		}
 		.toggle span{
 			font-size: 3em;
@@ -72,7 +102,7 @@
 		.intro{
 			width: 140%;
 			margin-top: 24em;
-			margin-left: -7%;
+			margin-left: -22%;
 			margin-bottom: 15em;
 			padding: 0;
 		}
@@ -90,9 +120,9 @@
 			font-size: 1.1em;
 		}
 		.services{
-			margin-left: -22%;
+			margin-left: -26%;
 			margin-bottom: 14em;
-			width: 165%;
+			width: 150%;
 			background-color: white;
 			color: #000;
 			padding: 0em 3em 9em 3em;
@@ -136,7 +166,7 @@
 		#footerContact{
 			background-color: rgba(0, 0, 0, 0.5);
 			width: 400px;
-			height: 150px;
+			height: 275px;
 			border-radius: 50% 50% 0 0;
 				-moz-border-radius: 900px 900px 0 0;
 				-webkit-border-radius: 90	0px 900px 0 0;
@@ -145,15 +175,16 @@
 			margin-top: 10em;
 			margin-left: 15em;
 			padding: 0em;
-			font-size: 2.2em;
+			font-size: 2.8em;
 
 		}
 		#footerText{
-			padding-top: 1.5em;
+			padding-top: 2.5em;
 			text-align: center;
 			font-family: serif;
-
-
+		}
+		#footerText p{
+			padding-bottom: .75em;
 		}
 	}
 	</style>
@@ -165,11 +196,10 @@
     </div>
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10 intro">
+			<div class="col-md-10 intro">
         <h1>Welcome to Paw to Hoof Pet Services</h1>
         <p>We are a professionally certified, licensed, insured, and bonded company
-           servicing <span class="town">Woodinville</span>, <span class="town">Bothell</span>,
-           <span class="town">Kenmore</span>, and the surrounding areas.</p>
+           servicing <span class="town">Sanford</span>, and the surrounding areas.</p>
       </div>
     </div>
     <div class="learn_more">
@@ -358,10 +388,9 @@
 				<label for="drop" class="toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></label>
 				<input type="checkbox" id="drop" />
 				<ul class="menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="photos.html">Photos</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#aboutMobile">About</a></li>
+					<li><a><span class="glyphicon glyphicon-envelope"></a><a><span class="glyphicon glyphicon-phone-alt"></a></li>
 			</ul>
 		</nav>
 		</div>
@@ -372,13 +401,13 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 intro">
-        <h1>Welcome to Paw to Hoof Pet Services</h1>
-        <p>We are a professionally certified, licensed, insured, and bonded company
-           servicing <span class="town">Woodinville</span>, <span class="town">Bothell</span>,
-           <span class="town">Kenmore</span>, and the surrounding areas.</p>
+	        <h1>Welcome to Paw to Hoof Pet Services</h1>
+	        <p>We are a professionally certified, licensed, insured, and bonded company
+	           servicing <span class="town">Sanford</span>, and the surrounding areas.</p>
+	      </div>
       </div>
 		</div>
-			<div class="row services">
+			<div class="row services" id="services">
 		    <h1>Services</h1>
 		      <div class="col-md-12">
 						<img class="services_type" src="img/training.jpg">
@@ -440,7 +469,7 @@
 		          information on what we can provide for you and your farm pets.</p>
 		      </div>
 	</div>
-	<div class="row services">
+	<div class="row services" id="aboutMobile">
 		<h1>About</h1>
 			<div class="col-md-12">
 				<img class="about_type karen-img" src="img/pic2.jpg">
